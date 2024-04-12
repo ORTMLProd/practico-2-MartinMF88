@@ -68,7 +68,7 @@ ITEM_PIPELINES = {
 }
 
 IMAGES_STORE = "s3://mlprod-bucket-martin"
-# IMAGES_STORE = "<local_path>"
+#IMAGES_STORE = "<local_path>"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
