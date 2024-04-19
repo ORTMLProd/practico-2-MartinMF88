@@ -67,7 +67,7 @@ ITEM_PIPELINES = {
     "scrapy.pipelines.images.ImagesPipeline": 120
 }
 
-IMAGES_STORE = "s3://mlprod-bucket-martin"
+IMAGES_STORE = "s3://mlprod-bucket-martin/"
 
 #IMAGES_STORE = "<local_path>"
 
