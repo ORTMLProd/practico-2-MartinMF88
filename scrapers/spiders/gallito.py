@@ -22,7 +22,7 @@ class GallitoSpider(CrawlSpider):
 
     def __init__(self):
         super().__init__()
-        self.s3_bucket_name = "ml-en-produccion"
+        self.s3_bucket_name = "mlprod-bucket-martin"
         self.s3_client = boto3.client("s3")
         self.possible_types = {
             "casa": "HOUSE",
