@@ -20,14 +20,14 @@ class GallitoSpider(CrawlSpider):
         Rule(LinkExtractor(allow=r"-\d{8}$"), callback="parse_property"),
     )
 
-    def __init__(self):
-        super().__init__()
-        self.s3_bucket_name = "mlprod-bucket-martin"
-        self.s3_client = boto3.client("s3")
-        self.possible_types = {
-            "casa": "HOUSE",
-            "apartamento": "APARTMENT",
-        }
+#    def __init__(self):
+#        super().__init__()
+#        self.s3_bucket_name = "mlprod-bucket-martin"
+#        self.s3_client = boto3.client("s3")
+#        self.possible_types = {
+#            "casa": "HOUSE",
+#            "apartamento": "APARTMENT",
+#        }
 
     def parse_property(self, response):
         property_id = response.css("#HfCodigoAviso::attr('value')").get()
